@@ -28,27 +28,31 @@
           <p>Please let us know how we did with your support request. All feedback is appreciated 
           to help us improve our offering!</p>
           <div class="rate-nums">
-            <div class="num-btn unselected">1</div>
-            <div class="num-btn unselected">2</div>
-            <div class="num-btn unselected">3</div>
-            <div class="num-btn unselected">4</div>
-            <div class="num-btn unselected">5</div>
+            <div id="1" class="num-btn unselected" onclick="makeActive(0)">1</div>
+            <div id="2" class="num-btn unselected" onclick="makeActive(1)">2</div>
+            <div id="3" class="num-btn unselected" onclick="makeActive(2)">3</div>
+            <div id="4" class="num-btn unselected" onclick="makeActive(3)">4</div>
+            <div id="5" class="num-btn unselected" onclick="makeActive(4)">5</div>
           </div>
 
-          <button class="submit">SUBMIT</button>
+          <button class="submit" onclick="submitForm()">SUBMIT</button>
 
           <!-- Rating state end -->
         </div>
 
-        <div class="thank-you">
+        <div class="thank-you inactive">
           <!-- Thank you state start -->
 
-          You selected <!-- Add rating here --> out of 5
+          <img id="ty-img" src="./images/illustration-thank-you.svg">
 
-          Thank you!
+          <div class="ty-rate">
+            You selected 4 out of 5
+          </div>
 
-          We appreciate you taking the time to give a rating. If you ever need more support, 
-          don’t hesitate to get in touch!
+          <h2>Thank you!</h2>
+
+          <p id="ty-text">appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
 
           <!-- Thank you state end -->
         </div>

@@ -27,6 +27,10 @@ p {
     color: var(--Light-Grey);
 }
 
+.inactive {
+    display: none !important;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -52,7 +56,19 @@ p {
 }
 
 .thank-you {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ty-rate {
+    padding: 5px 15px;
+    padding-bottom: 3px;
+    background-color: hsl(213, 19%, 25%);
+    border-radius: 20px;
+    font-weight: 700;
+    color: var(--Orange);
+    margin: 10px;
 }
 
 .rate-nums {
@@ -62,6 +78,7 @@ p {
 }
 
 .num-btn {
+    vertical-align: baseline;
     width: 20px;
     height: auto;
     display: flex;
@@ -91,12 +108,27 @@ p {
 }
 
 .selected {
-    background-color: var(--Orange);
-    color: var(--White);
+    background-color: var(--Orange) !important;
+    color: var(--White) !important;
 }
 
 .unselected:hover {
     background-color: hsl(213, 19%, 50%);
     color: var(--White);
     cursor: pointer;
+}
+
+.attribution {
+    display: flex;
+    justify-self: flex-end;
+}
+
+#ty-img {
+    margin: 20px;
+}
+
+#ty-text {
+    color: var(--Light-Grey);
+    text-align: center;
+    margin-top: 0px;
 }
