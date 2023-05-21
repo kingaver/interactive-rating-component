@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    font-family: 'Overpass', sans-serif;
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    color: var(--White);
+}
+
+p {
+    color: var(--Light-Grey);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+}
+
+.container {
+    width: 350px;
+    background-color: var(--Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.star {
+    padding: 15px;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 25%);
+}
+
+.thank-you {
+    display: none;
+}
+
+.rate-nums {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+
+.num-btn {
+    width: 20px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 25%);
+    color: hsl(213, 19%, 40%);
+    font-weight: 700;
+}
+
+.submit {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: 700;
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.submit:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+    cursor: pointer;
+}
+
+.selected {
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.unselected:hover {
+    background-color: hsl(213, 19%, 50%);
+    color: var(--White);
+    cursor: pointer;
+}
